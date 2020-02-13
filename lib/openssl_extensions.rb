@@ -6,7 +6,7 @@ require 'ffi'
 module MoneyTree
   module OpenSSLExtensions
     extend FFI::Library
-    ffi_lib ['libssl.so.1.1.1', 'libssl.so.11', 'libssl1.1.1', 'libssl.1.1.1', 'ssl']
+    ffi_lib ['libssl.so.1.1.1', 'libssl.so.11', 'libssl1.1.1', 'libssl.1.1', 'ssl']
 
     NID_secp256k1 = 714
     POINT_CONVERSION_COMPRESSED = 2
